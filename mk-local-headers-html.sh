@@ -10,6 +10,8 @@ if [ -z $DISPLAY ]
     DIALOG=Xdialog   
 fi
 
+IFS=$'\n' 
+
 trgtDir=`$DIALOG --stdout --title "выбор целевой дирректории" --dselect $HOME/  30 90`
 
 case $? in
