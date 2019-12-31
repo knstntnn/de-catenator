@@ -2,6 +2,7 @@
 ## knn-190612 - Дробилка - списка*.m3u (decatenator)
 ## "Разрезает" большой плейлист на мелкие.
 
+IFS=$'\n' 
 
 inputM3u=$( cat /tmp/inputM3u ) 
 #inputM3u=выбор списка-m3u
